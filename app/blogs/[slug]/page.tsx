@@ -3,7 +3,7 @@ import { getPostBySlug, getAllPosts } from '@/lib/blog'
 import { notFound } from 'next/navigation'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 
-export const dynamic = 'force-dynamic'
+
 
 export async function generateStaticParams() {
   const posts = getAllPosts()
